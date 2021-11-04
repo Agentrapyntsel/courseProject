@@ -1,0 +1,30 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  &-links-container{
+    display: flex;
+    font-size: 30px;
+    @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+    font-family: 'Alice', serif;
+  }
+  &-link{
+    margin-right: 18px;
+    color: black;
+    text-decoration: none;
+  }&-btn{
+       align-self: center;
+       margin-right: 40px;
+       font-family: 'Alice', serif;
+
+
+  }&-logo{
+      height: 120px;
+      width: 200px;
+  }
+}
+
+li{
+  list-style: none;
+}
+
+

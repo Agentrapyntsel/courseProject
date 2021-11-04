@@ -1,0 +1,38 @@
+.login-wrapper{
+  background-image:url( 'https://c.stocksy.com/a/l61200/z9/480919.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 799px;
+}
+
+.login-form{
+
+  text-align: center;
+  &-header{
+    margin-bottom: 50px;
+    @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+    font-family: 'Alice', serif;
+  }&-email{
+    margin-bottom: 20px;
+    margin-left: 30px;
+  }
+  &-password{
+    margin-bottom: 20px;
+    margin-left: 10px;
+  } &-btn{
+    margin-bottom: 20px;
+  } &-signup{
+    color:black;
+  }
+}
+
+.signup-img {
+  width: 240px;
+  height: 240px;
+}
+
+.signup-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+}
