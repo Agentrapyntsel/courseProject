@@ -3,7 +3,7 @@ export const baseUrl = 'https://age-of-empires-2-api.herokuapp.com/api/v1';
 export const defaultConfig = {
     headers: {
         Accept: 'application/json',
-    }
+            }
 }
 
 export const API = {

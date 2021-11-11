@@ -9,12 +9,14 @@ export const UnitInfo = (props) => {
   const path = props?.match.url;
 
   const [unit, setData] = useState([]);
- 
-  useEffect(async () => {
-    const result = await API.get(path);
-    const data = await result.json();
-    setData(data)
-  }, [path]);
+
+    useEffect(()=> {
+        (async () => {
+            const result = await API.get(path);
+            const data = await result.json();
+            setData(data);
+        })();
+    },[path]);
     
     const goBack = () => {
         const { history } = props;

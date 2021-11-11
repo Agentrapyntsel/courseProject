@@ -11,10 +11,12 @@ export const CivilizationInfo = (props) => {
 
   const [civilization, setData] = useState([]);
  
-  useEffect(async () => {
-    const result = await API.get(path);
-    const data = await result.json();
-    setData(data)
+  useEffect(()=>{
+      (async () => {
+          const result = await API.get(path);
+          const data = await result.json();
+          setData(data);
+      })();
   }, [path]);
     
     const goBack = () => {

@@ -9,11 +9,14 @@ export const TechnologyInfo = (props) => {
 
   const [technology, setData] = useState([]);
  
-  useEffect(async () => {
-    const result = await API.get(path);
-    const data = await result.json();
-    setData(data)
-  }, [path]);
+
+    useEffect(()=>{
+        (async () => {
+            const result = await API.get(path);
+            const data = await result.json();
+            setData(data);
+        })();
+    }, [path]);
     
     const goBack = () => {
         const { history } = props;

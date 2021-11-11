@@ -1,12 +1,15 @@
 {
-  "name": "AgeOfEmpiresPROJECT",
+  "name": "age-of-empires-project",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.6.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.6.5",
     "axios": "^0.24.0",
+    "enzyme": "^3.11.0",
+    "enzyme-to-json": "^3.6.2",
     "firebase": "^8.10.0",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
@@ -19,7 +22,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --verbose --env=node",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -44,5 +47,10 @@
     "react-redux": "^7.2.2",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0"
+  },
+  "jest": {
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }

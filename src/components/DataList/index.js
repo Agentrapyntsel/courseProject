@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { getData } from '../../redux/actions';
 import ListItem from '../ListItem';
-import Preloader from '../Preloader'
+import Preloader from '../Preloader/Preloader'
 
 class DataList extends React.Component {
 
