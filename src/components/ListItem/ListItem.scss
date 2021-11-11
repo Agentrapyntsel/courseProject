@@ -1,0 +1,15 @@
+.list{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+ }
+
+.listItem-li {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  font-size: 20px;
+}
+.listItem-item {
+  color: black;
+}

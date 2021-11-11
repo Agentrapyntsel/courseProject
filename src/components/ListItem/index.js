@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+
+import "./ListItem.scss";
 
 import { Link } from 'react-router-dom'
 
@@ -9,7 +11,7 @@ class ListItem extends React.PureComponent {
         const { name, path, id } = this.props;
 
         return (
-            <li><Link to = {`${path}/${id}`}>{name}</Link></li>
+            <li className='listItem-li'><Link className='listItem-item' to = {`${path}/${id}`}>{name}</Link></li>
         )
     }
 }

@@ -29,7 +29,8 @@ class DataList extends React.Component {
 
                 {Boolean(!dataForRender)?<Preloader/> :
                 <ul className = 'list'>
-                    {dataForRender.map(item => <ListItem key = {item.id} name = {item.name} path = {infoPath} id = {item.id}/>)}
+                    {dataForRender.map(
+                        item => <ListItem key = {item.id} name = {item.name} path = {infoPath} id = {item.id}/>)}
                 </ul>}
             </>
         );

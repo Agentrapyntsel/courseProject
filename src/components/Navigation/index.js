@@ -9,9 +9,8 @@ export const Navigation =()=>{
    const history = useHistory();
 
     const handleLogout = () => {
-        auth.signOut();
-
-        history.push('/login');
+        auth.signOut()
+            .then(r => history.push('/login'));
     };
         return (
             <nav className = 'navigation'>
@@ -21,7 +20,7 @@ export const Navigation =()=>{
                         <li ><Link className = 'navigation-link' to='/civilizations'>Civilizations</Link></li>
                         <li ><Link className = 'navigation-link' to='/units'>Units</Link></li>
                         <li ><Link className = 'navigation-link' to='/structures'>Structures</Link></li>
-                        <li ><Link className = 'navigation-link' to='/technologies'>Technologies</Link></li>
+                        <li ><Link className = 'navigation-link last' to='/technologies'>Technologies</Link></li>
                     </ul>
                 </div>
                 <img src='https://igromagnit.net/uploads/posts/2019-07/1564025262_age-of-empires-definitive-edition-logo.png'

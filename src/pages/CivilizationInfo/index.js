@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import { getNameForFetch } from '../../helpers';
 import { API } from '../../api';
 
+
 export const CivilizationInfo = (props) => {
 
   const path = props?.match.url
@@ -29,9 +30,10 @@ export const CivilizationInfo = (props) => {
         history.push('/');
       }
 
-       const { name, expansion, army_type, unique_unit, unique_tech, team_bonus, civilization_bonus } = civilization;
-    
+       const { name, expansion, army_type, unique_unit='default', unique_tech='default', team_bonus, civilization_bonus } = civilization;
+
         return (
+
           <div>  
                 <div>
                   <h1>Civilization Info - {name}</h1>
@@ -50,15 +52,14 @@ export const CivilizationInfo = (props) => {
                   </ul>
 
                   <div>
-                          {
-                              Boolean(unique_unit) &&
+                          {Boolean(unique_unit.length>0) &&
                                   <div>
                                    <Link to = {`/unit/${getNameForFetch(unique_unit[0])}`}><p>Unique unit</p></Link>
                                   </div>
+
                           }
 
-                          {
-                              Boolean(unique_tech) &&
+                          {Boolean(unique_tech.length>0) &&
                                   <div>
                                    <Link to = {`/technology/${getNameForFetch(unique_tech[0])}`}><p>Unique technology</p></Link>
                                   </div>

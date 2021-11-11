@@ -8,6 +8,7 @@
 .login-form{
 
   text-align: center;
+
   &-header{
     margin-bottom: 50px;
     @import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
@@ -23,7 +24,14 @@
     margin-bottom: 20px;
   } &-signup{
     color:black;
-  }
+            border-radius:20px ;
+  cursor: pointer;
+            border: 3px solid white;
+            background: rgb(241,240,137);
+            text-decoration: none;
+            padding: 5px;
+            background: linear-gradient(90deg, rgba(241,240,137,1) 8%, rgba(236,186,114,0.9920343137254902) 51%, rgba(196,182,82,1) 100%);
+          }
 }
 
 .signup-img {
@@ -35,4 +43,13 @@
   display: flex;
   justify-content: space-around;
   margin-top: 100px;
+}
+
+.gradient-btn{
+  padding: 7px;
+  cursor: pointer;
+  border-radius:20px ;
+  border: 3px solid white;
+   background: rgb(241,240,137);
+  background: linear-gradient(90deg, rgba(241,240,137,1) 8%, rgba(236,186,114,0.9920343137254902) 51%, rgba(196,182,82,1) 100%);
 }
