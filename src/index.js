@@ -10,15 +10,15 @@ import {AuthContextProvider} from "./context/AuthContextProvider";
 import PrivateRoute from "./pages/AUTH/PrivateRoute";
 
 import App from './App';
-import { Civilizations } from './pages/Civilizations';
-import { Units } from './pages/Units';
-import { HomePage } from './pages/HomePage';
-import { Structures } from './pages/Structures';
-import { CivilizationInfo } from './pages/CivilizationInfo';
-import { StructureInfo } from './pages/StructureInfo';
-import { UnitInfo } from './pages/UnitInfo';
-import { Technologies } from './pages/Technologies'; 
-import { TechnologyInfo } from './pages/TechnologyInfo';
+import  Civilizations  from './pages/Civilizations';
+import  Units  from './pages/Units';
+import  HomePage  from './pages/HomePage';
+import  Structures  from './pages/Structures';
+import  CivilizationInfo  from './pages/CivilizationInfo';
+import  StructureInfo  from './pages/StructureInfo';
+import  UnitInfo  from './pages/UnitInfo';
+import  Technologies  from './pages/Technologies';
+import  TechnologyInfo  from './pages/TechnologyInfo';
 import {NotFound} from './pages/NotFound/NotFound';
 import 'normalize.css';
 

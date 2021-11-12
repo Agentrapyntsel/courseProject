@@ -34,7 +34,7 @@ const SignUp = () => {
                     <input className='login-form-password' name='password' type='password' placeholder='password'/>
                 </label><br/>
                 <div className='login-form-btn'>
-                    <button type='submit'>Sign Up</button>
+                    <button className='gradient-btn' type='submit'>Sign Up</button>
                     <br/></div>
                 <Link className='login-form-signup' to='/login'>Log in</Link>
             </form>

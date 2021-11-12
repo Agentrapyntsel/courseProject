@@ -1,12 +1,12 @@
 import React from "react";
+import {RouteComponentProps} from 'react-router-dom';
 
-import './NotFound.scss'
+import './NotFound.scss';
 
-
-export const NotFound = (props) => {
+ export const  NotFound: React.FunctionComponent<RouteComponentProps> = ({history}) => {
 
     const goHome = () => {
-        props.history.push('/');
+        history.push('/');
     }
 
     return (
@@ -33,4 +33,3 @@ export const NotFound = (props) => {
     )
 }
 
-export default NotFound;
