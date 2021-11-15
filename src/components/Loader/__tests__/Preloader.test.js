@@ -1,14 +1,14 @@
 import { configure, shallow } from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
-import Preloader from "../Preloader";
+import Loader from "../Loader";
 
 configure({ adapter: new Adapter() });
 
 describe('Should render correctly "LoaderSecondary"', () => {
     let wrapper;
     beforeEach(() => {
-        wrapper = shallow(<Preloader/>);
+        wrapper = shallow(<Loader/>);
     });
     it('to Match Snapshot', () => {
         expect(wrapper).toMatchSnapshot();

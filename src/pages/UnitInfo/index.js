@@ -2,7 +2,7 @@ import React from 'react';
 import {useState, useEffect} from 'react';
 import { API } from '../../api';
 
-import './UnitInfo.scss'
+import './CommonInfo.scss'
 
 export const UnitInfo = (props) => {
 
@@ -32,7 +32,7 @@ export const UnitInfo = (props) => {
     const { name, description, expansion, build_time, range, attack, armor, attack_bonus, armor_bonus } = unit;
     
     return (
-        <div>
+        <div className='wrapper'>
           <h1>Unit Info - {name}</h1>
             <div className='center-wrapper'>
                 <p>{description}</p>
@@ -45,8 +45,8 @@ export const UnitInfo = (props) => {
                     {Boolean(attack_bonus && attack_bonus.length) && <li>Attack bonus: {attack_bonus}</li>}
                     {Boolean(armor_bonus && armor_bonus.length) && <li>Armor bonus: {armor_bonus}</li>}
                 </ul>
-                <button onClick={goBack}>Go back</button><br/>
-                <button onClick={goHome}>Go home</button>
+                <button className='gradient-btn' onClick={goBack}>Go back</button><br/>
+                <button className='gradient-btn' onClick={goHome}>Go home</button>
             </div>
         </div>
     )

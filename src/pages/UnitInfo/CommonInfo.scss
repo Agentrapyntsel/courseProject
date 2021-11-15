@@ -1,0 +1,28 @@
+.wrapper{
+  background: rgb(242,226,142);
+  background: linear-gradient(90deg, rgba(242,226,142,1) 8%, rgba(236,186,114,1) 45%, rgba(232,197,113,1) 69%, rgba(240,227,132,1) 94%);
+  padding: 75px;
+  border-radius: 50%;
+  width: 500px;
+  margin: auto;
+}
+
+.center-wrapper {
+  display: block;
+   margin: 0 auto;
+  width: 500px;
+  text-align: center;
+}
+
+.gradient-btn{
+  margin-top: 5px;
+  margin-left: 4px;
+  padding: 7px;
+  cursor: pointer;
+  border-radius:20px ;
+  border: 3px solid white;
+  background: rgb(241,240,137);
+  background: linear-gradient(90deg, rgba(241,240,137,1) 8%, rgba(236,186,114,0.9920343137254902) 51%, rgba(196,182,82,1) 100%);
+}
+
+

@@ -21,6 +21,7 @@ import  Technologies  from './pages/Technologies';
 import  TechnologyInfo  from './pages/TechnologyInfo';
 import {NotFound} from './pages/NotFound/NotFound';
 import 'normalize.css';
+import './App.scss';
 
 ReactDOM.render(
 
@@ -30,7 +31,7 @@ ReactDOM.render(
 
         <App>
           <Switch>
-          <Route path='/login' component={Login} />
+          <Route path='/login' exact component={Login} />
           <Route path='/signup' component={SignUp} />
 
           <Route path = '/' exact component = {HomePage}/>

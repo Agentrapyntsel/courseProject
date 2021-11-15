@@ -3,6 +3,8 @@ import {useState, useEffect} from 'react';
 
 import { API } from '../../api';
 
+import '../UnitInfo/CommonInfo.scss';
+
 export const StructureInfo = (props) => {
 
     const path = props?.match.url
@@ -32,16 +34,17 @@ export const StructureInfo = (props) => {
     
     return (
         
-            <div>
+            <div className='wrapper'>
                 <h1>Structure Info - {name}</h1>
-                <p>{description}</p>
-                <ul>
-                    <li>Expansion: {expansion}</li>
-                    <li>Build time: {build_time}</li>
-                    <li>Hit point: {hit_points}</li>
-                </ul>
-                <button onClick = {goBack}>Go back</button>
-                <button onClick = {goHome}>Go home</button>
+                <div className='center-wrapper'><p>{description}</p>
+                    <ul>
+                        <li>Expansion: {expansion}</li>
+                        <li>Build time: {build_time}</li>
+                        <li>Hit point: {hit_points}</li>
+                    </ul>
+                    <button className='gradient-btn' onClick={goBack}>Go back</button><br/>
+                    <button className='gradient-btn' onClick={goHome}>Go home</button>
+                </div>
             </div>
     )
 };

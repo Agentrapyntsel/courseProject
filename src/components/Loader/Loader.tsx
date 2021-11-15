@@ -1,6 +1,8 @@
 import React from 'react';
 
-const Preloader = () => {
+import "./loader.scss";
+
+const Loader = () => {
 	return (
 		<div className='loader'>
 			<img alt="preloader" src='https://i.gifer.com/Sxnf.gif'/>
@@ -8,4 +10,4 @@ const Preloader = () => {
 	)
 }
 
-export default Preloader;
+export default Loader;

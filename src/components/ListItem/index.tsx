@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import "./ListItem.scss";
 
-import { Link } from 'react-router-dom'
+export type  ListItemProps={name:string, path:string, id:number};
 
-class ListItem extends React.PureComponent {
+class ListItem extends React.PureComponent<ListItemProps> {
 
     render() {
 

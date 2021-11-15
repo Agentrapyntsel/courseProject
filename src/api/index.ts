@@ -7,19 +7,19 @@ export const defaultConfig = {
 }
 
 export const API = {
-    request(url, config = {}) {
+    request(url:string, config = {}) {
         return fetch(url, {
             ...defaultConfig,
             ...config,
         });
     },
-    get(path, config = {}) {
+    get(path:string, config = {}) {
         return this.request(`${baseUrl}${path}`, config);
     },
-    post(path, config = {}) {},
-    put(path, config = {}) {},
-    patch(path, config = {}) {},
-    delete(path, config = {}) {},
+    post(path:string, config = {}) {},
+    put(path:string, config = {}) {},
+    patch(path:string, config = {}) {},
+    delete(path:string, config = {}) {},
 };
 
 

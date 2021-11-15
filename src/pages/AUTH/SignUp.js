@@ -1,14 +1,18 @@
+import React from 'react';
 import { useHistory, Link } from 'react-router-dom';
 import { auth } from "../../firebase";
 
 import './login.scss'
+
 
 const SignUp = () => {
     const history = useHistory();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const { email, password } = e.target.elements;
+       const { email, password } = e.target.elements;
+       //const { email, password } =(e.target as Element).elements;  (e:React.FormEvent)
+
 
         await auth.createUserWithEmailAndPassword(email.value, password.value);
 
